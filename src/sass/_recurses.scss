@@ -1,0 +1,87 @@
+@font-face {
+    font-family: fligth;
+    src: url(../fonts/Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: fmedium;
+    src: url(../fonts/Comfortaa-Medium.ttf);
+}
+
+@font-face {
+    font-family: fbold;
+    src: url(../fonts/Comfortaa-Bold.ttf);
+}
+@font-face {
+    font-family: robligth;
+    src: url(../fonts/RobotoCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: robregular;
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+
+$colors: (primary: #F4243C,
+    secundary: #FFF,
+    letter: #242C4D,
+    matiz:#F2F2F2,
+);
+
+$button-bg: #F4243C;
+$button-text-color: #fff;
+$baby-blue: #f8faff;
+
+
+.bubbly-button{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: $button-bg;
+  color: $button-text-color;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  
+  &:focus {
+    outline: 0;
+  }
+  
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+  
+  &:active{
+    transform: scale(0.9);
+    background-color: darken($button-bg, 5%);
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  }
+  
+  &.animate{
+    &:before{
+      display: block;
+      animation: topBubbles ease-in-out 0.75s forwards;
+    }
+    &:after{
+      display: block;
+      animation: bottomBubbles ease-in-out 0.75s forwards;
+    }
+  }
+}
