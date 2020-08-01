@@ -16,24 +16,10 @@ body {
 
 
 header {
-  width: 100%;
-  height: 100vh;
-  background: map-get($colors, 'primary');
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // position: relative;
-
-  // nav {
-  //   text-align: center;
-  //   display: flex;
-
   a {
     color: map-get($colors, 'letter') !important;
     text-decoration: none;
   }
-
-  // }
 
   nav {
     div {
@@ -46,6 +32,16 @@ header {
       }
     }
   }
+}
+
+.header {
+  width: 100%;
+  height: 87vh;
+  background: map-get($colors, 'primary');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 
   .sidenav {
     li {
@@ -55,8 +51,6 @@ header {
         .background {
           height: 8em;
           display: block;
-
-
         }
 
         a {
@@ -73,39 +67,43 @@ header {
   .text-header {
     height: 70vh;
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     align-items: center;
     color: #FFF;
     align-items: center;
-    .container{
-      display: flex;
-    justify-content: space-evenly; 
-    align-items: center;
-      .text {
-      width: 65%;
-      flex-direction: column;
-      h1{
-        font-size: 5em;
-      }
-      h2 {
-        font-size: 3em;
-        font-family: robligth;
-      }
-    }
 
-    .logo-int {
-      width: 35%;
-      height: 18em;
+    .container {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      img {
-        width: 200px;
-        height: 200px;
+
+      .text {
+        width: 65%;
+        flex-direction: column;
+
+        h1 {
+          font-size: 4em;
+        }
+
+        h2 {
+          font-size: 2.8em;
+          font-family: robligth;
+        }
       }
 
+      .logo-int {
+        height: 18em;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        img {
+          width: 200px;
+          height: 200px;
+        }
+
+      }
     }
-  }
 
   }
 
@@ -119,18 +117,24 @@ header {
 .description-img {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 16px;
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 
   img {
-    width: 58%;
+    width: 55%;
   }
 
   .description-img-text {
-    width: 38%;
+    width: 35%;
     font-family: robligth;
     color: map-get($colors, 'letter');
+
+    h2 {
+      font-size: 2.56rem;
+    }
 
     button {
       margin-top: 17%;
@@ -143,42 +147,61 @@ header {
 
 .tools {
   background: map-get($colors, 'matiz');
-  width: 100%;
-  height: 100vh;
+  width: 100% !important;
+  height: 70vh;
 
-  .work {
-    color: map-get($colors, 'primary');
-    font-family: robregular;
-    font-size: 2em;
-    text-align: center;
-  }
+  .section-tools {
+    padding: 5%;
 
-  .work-tools {
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
+    .work {
+      color: map-get($colors, 'primary');
+      font-family: robregular;
+      font-size: 3em;
+      text-align: center;
+      margin: 5%;
+    }
 
-    .tool-container {
-      width: 29%;
+    .work-tools {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
 
-      .container-img {
-        background: #FFFFFF;
+      .tool-container {
+        width: 20%;
+        height: 30%;
         display: flex;
-        align-items: center;
         justify-content: center;
-        width: 246px;
-        height: 246px;
-        border-radius: 50%;
-        box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+        align-items: center;
+        flex-direction: column;
 
-        img {
-          width: 35%;
-          color: map-get($colors, 'letter');
+        .container-img {
+          margin: auto;
+          background: #FFFFFF;
+          box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+          padding: 1%;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            height: 80px;
+            display: block;
+            align-self: auto;
+          }
         }
-      }
 
-      h3 {
-        color: map-get($colors, 'letter');
+        .container-text {
+          margin: auto;
+
+          h3 {
+            font-size: 2rem;
+            color: map-get($colors, 'letter');
+          }
+        }
       }
     }
   }
@@ -240,4 +263,124 @@ header {
 
 .imagen-port:hover .hover-galeria {
   transform: scale(1);
+}
+
+@media (max-width:600px) {
+
+  .text-header {
+
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+
+      .text {
+        text-align: center;
+
+        h1 {
+          font-size: 3em !important;
+        }
+
+        h2 {
+          font-size: 2.5em !important;
+          font-family: robligth;
+        }
+      }
+
+      .logo-int {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+
+  .description-img {
+    display: block;
+    margin-top: 5%;
+
+    img {
+      width: 88%;
+    }
+
+    .description-img-text {
+      width: 100%;
+      font-family: robligth;
+      color: map-get($colors, 'letter');
+
+      h2 {
+        font-size: 2.00rem;
+      }
+
+      button {
+        margin-top: 9%;
+        border: none;
+      }
+
+    }
+
+  }
+
+  .tools {
+    height: 100vh;
+
+    .section-tools {
+      padding: 1%;
+
+      .work {
+        font-size: 2.3em;
+      }
+
+      .work-tools {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .tool-container {
+          width: 45%;
+          height: 30%;
+          display: block;
+          align-self: auto;
+
+          .container-img {
+            margin: auto;
+            background: #FFFFFF;
+            box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+            padding: 1%;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              height: 60px;
+              display: block;
+              align-self: auto;
+            }
+          }
+
+          .container-text {
+            text-align: center;
+            width: 100%;
+
+            h3 {
+              font-size: 1.5rem;
+              color: map-get($colors, 'letter');
+            }
+          }
+        }
+      }
+    }
+  }
 }
