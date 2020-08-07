@@ -23,7 +23,10 @@ export default () => {
 
     <section class=" description">
     <div class="description-img">
-        <img src="./imagenes/coding-sit.svg" alt="">
+    <div class="img-des">
+        <h2>¿Qué hago?</h2>
+            <img src="./imagenes/coding-sit.svg" alt="">
+    </div>
         <div class="description-img-text">
             <h2> Desarrollo productos web mejorando continuamente procesos y presentación de productos a los
                 clientes.</h2>
@@ -77,21 +80,131 @@ export default () => {
        </div>
 </div>
 </section>
-<section class="container space-habilities ">
+<section class="space-habilities ">
     <div class="section-habilities">
-    <h2>Habilidades Tecnicas</h2>
-        <div class="row">
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./imagenes/nodejs.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Node Js</span>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">¿Qué es?</a>
-                    </div>
+    <h2>Habilidades Técnicas</h2>
+        <div class="content-all">
+            <div class ="each-card">
+                <div class="card-img">
+                    <img src="./imagenes/nodejs.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>Node Js</p>
+                    <hr>
+                    <a href="https://nodejs.org/en/">Ver más</a>
+                </div>
+            </div>
+            <div class ="each-card">
+                <div class="card-img">
+                    <img src="./imagenes/angular1.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>Angular</p>
+                    <hr>
+                    <a href="https://angular.io/">Ver más</a>
+                </div>
+            </div>
+            <div class ="each-card">
+                <div class="card-img">
+                    <img src="./imagenes/fire.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>Firebase</p>
+                    <hr>
+                    <a href="https://firebase.google.com/">Ver más</a>
+                </div>
+            </div>
+            <div class ="each-card">
+                <div class="card-img">
+                    <img src="./imagenes/jest.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>Jest</p>
+                    <hr>
+                    <a href="https://jestjs.io/">Ver más</a>
+                </div>
+            </div>
+            <div class ="each-card">
+                <div class="card-img">
+                    <img src="./imagenes/sass.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>Sass</p>
+                    <hr>
+                    <a href="https://sass-lang.com/">Ver más</a>
+                </div>
+            </div>
+            <div class ="each-card">
+                <div class="card-img">
+                    <img src="./imagenes/js.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>JavaScript</p>
+                    <hr>
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">Ver más</a>
+                </div>
+            </div>
+            <div class ="each-card">
+                <div class="card-img">
+                    <img src="./imagenes/ts.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>Typescript</p>
+                    <hr>
+                    <a href="https://www.typescriptlang.org/">Ver más</a>
+                </div>
+            </div>
+
+            <div class ="each-card">
+                <div class="card-img">
+                    <img src="./imagenes/html.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>Html</p>
+                    <hr>
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML">Ver más</a>
+                </div>
+            </div>
+
+            <div class ="each-card">
+                <div class="card-img">
+                    <img src="./imagenes/git.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>Git</p>
+                    <hr>
+                    <a href="https://git-scm.com/">Ver más</a>
+                </div>
+            </div>
+
+            <div class ="each-card">
+                <div class="card-img">
+                    <img src="./imagenes/figma.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>Figma</p>
+                    <hr>
+                    <a href="https://www.figma.com/">Ver más</a>
+                </div>
+            </div>
+            <div class ="each-card">
+            <div class="card-img">
+                <img src="./imagenes/css.png" alt="">
+            </div>
+            <div class="card-text">
+                <p>Css</p>
+                <hr>
+                <a href="https://developer.mozilla.org/es/docs/Web/CSS">Ver más</a>
+            </div>
+        </div>
+            <div class ="each-card">
+                <div class="card-img">
+                    <img src="./imagenes/visual.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>Visual Code</p>
+                    <hr>
+                    <a href="https://code.visualstudio.com/">Ver más</a>
                 </div>
             </div>
         </div>
@@ -103,30 +216,3 @@ export default () => {
     div.innerHTML = view;
     return div
 }
-
-/*
-    <section class="container space-habilities ">
-       <div class="habilities">
-            <h2 class="titulo" >Habilidades Tecnicas</h2>
-            <div class="galeria-port">
-                <div class="imagen-port">
-                    <img class="img" src="./imagenes/node.png" alt="">
-                    <a href="https://nodejs.org/en/">
-                        <div class="hover-galeria">
-                            <img src="./imagenes/hacer-clic.svg" alt="">
-                            <p>¿Qué es?</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="imagen-port">
-                    <img src="./imagenes/angular1.png" alt="">
-                    <a href="https://angular.io/">
-                        <div class="hover-galeria">
-                            <img src="./imagenes/clic.png" alt="">
-                            <p>¿Qué es?</p>
-                        </div>
-                    </a>
-                </div>
-       </div>
-        </div>
-    </section>*/

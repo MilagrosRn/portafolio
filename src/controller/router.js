@@ -12,8 +12,14 @@ const changeView = (path) => {
             { return section.appendChild(components.inicio()) }
         case '#/sobremi':
             { return section.appendChild(components.sobreMi()) }
+        case '#/blog':
+            { return section.appendChild(components.blog()) }
+        case '#/proyectos':
+            { return section.appendChild(components.proyectos()) }
+        case '#/contactame':
+            { return section.appendChild(components.contactame()) }
         default:
             break;
     }
 }
-export {changeView}
+export { changeView }

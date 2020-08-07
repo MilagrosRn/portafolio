@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milagros Rodriguez</title>
     <link rel="stylesheet" href="./css/style.css">
-    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -37,33 +37,42 @@
         <ul class="sidenav container" id="mobile-demo">
             <li>
                 <div class="user-view">
+
+                <div class="closed">
+                    <a class="sidenav-close right" 
+                    data-target="slide-out">
+                    <i class="fas fa-times-circle" style="color: white;font-size: 2.3em;"></i>
+                </a>
+                </div>
+            
                     <div class="background">
                         <img class="img-log" src="./imagenes/programacion.jpg" alt="">
                     </div>
                     <a>
-                        <img class="circle" src="./imagenes/remote-work.svg" alt="">
-
+                        <img class="circle" style="background: white !important;" src="./imagenes/remote-work.svg"alt="">
                     </a>
                 </div>
             </li>
+            
             <li>
                 <div class="divider"></div>
             </li>
-            <li><a href="#/inicio">Inicio</a></li>
-            <li><a href="#/sobremi">Sobre mi</a></li>
-            <li><a href="#/blog">Blog</a></li>
-            <li><a href="#/proyectos">Proyectos</a></li>
+            <li><a href="#/inicio"><i class="material-icons">home</i>Inicio</a></li>
+            <li><a href="#/sobremi"><i class="material-icons">account_circle</i> Sobre mi</a></li>
+            <li><a href="#/blog"><i class="material-icons">receipt</i>Blog</a></li>
+            <li><a href="#/proyectos"><i class="material-icons">favorite</i>Proyectos</a></li>
             <li>
                 <div class="divider"></div>
             </li>
-            <li><a href="#/contactame">Contactame</a></li>
+            <li><a href="#/contactame"><i class="material-icons">email</i>Contactame</a></li>
             <li>
                 <div class="divider"></div>
             </li>
+
+
         </ul>
 
-
-       <!-- <img src="./imagenes/nodejs.png" alt=""> -->
+        <!-- <img src="./imagenes/nodejs.png" alt=""> -->
     </header>
     <!-- <article class="social-bar" style="width: 40%;">
         <a href="https://www.facebook.com/DevCode.la" class="icon icon-facebook" target="_blank"></a>
@@ -71,16 +80,46 @@
         <a href="https://www.youtube.com/c/devcodela" class="icon icon-youtube" target="_blank"></a>
         <a href="https://www.instagram.com/devcodela/" class="icon icon-instagram" target="_blank"></a>
     </article> -->
-    
+
 
     <section id="container"></section>
-    <footer>mio</footer>
+  
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l5 s12">
+                <img style="width: 45%;" src="./imagenes/redes.svg" alt="">
+            </div>
+            <div class="col l6 offset-l1 s12">
+              <h5 class="white-text">Mis Redes</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/milagrosrn/">
+                    <i class="fab fa-linkedin-in"></i>          milagrosrn</a>
+                </li>
+                <li><a class="grey-text text-lighten-3" href="https://github.com/MilagrosRn">
+                    <i class="fab fa-github"></i>            MilagrosRn</a>
+                </li>
+                <li><a class="grey-text text-lighten-3" href="#!">
+                    <i class="far fa-envelope"></i> milagros.rodrigueznav@gmail.com</a>
+                </li>   
+                <li><a class="grey-text text-lighten-3" href="#!">
+                    <i class="fab fa-instagram"></i>             milagros.rodriguezn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Creado por Milagros Rodriguez
+        </div>
+        </div>
+      </footer>
 
     <script type="module" src="main.js"></script>
-<!-- 
+    <!-- 
     <script src="particles.js"></script>
     <script src="particulas.js"></script> -->
-
 
 
 
@@ -91,7 +130,7 @@
         })
 
     </script>
-    
+
 </body>
 
 </html>

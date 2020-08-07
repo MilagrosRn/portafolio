@@ -33,6 +33,11 @@ $button-bg: #F4243C;
 $button-text-color: #fff;
 $baby-blue: #f8faff;
 
+@mixin title {
+  color: map-get($colors, 'primary');
+  font-family: robregular;
+  font-size: 3em;
+}
 
 .bubbly-button{
   font-family: 'Helvetica', 'Arial', sans-serif;
