@@ -847,7 +847,7 @@ footer {
   }
 
   .about {
-    height: 120vh;
+    height: 100%;
   }
   .about .row .col p {
     font-size: 1.8em;

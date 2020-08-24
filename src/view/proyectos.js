@@ -46,12 +46,14 @@ export default ()=>{
         </div>
         <div class="card-content">
         <span class="card-title grey-text text-darken-4">App de pedidos Burguer Queen</span>
-            <p>En esta interfaz podras saber si tu tarjeta de credito es válida</p>
+            <p>App para restaurant donde se pueden tomar pedidos y administrar usuarios</p>
         </div>
         <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">App de pedidos Burguer Queen<i
                     class="material-icons right">close</i></span>
-            <p>Fue pensado para una tienda online en la que antes de pagar se vaida que sea una tarjeta de credito existente</p>
+            <p>F
+            App para restaurant con roles en la que se puede tomar pedidos si es mesero, y administrar empleados y productos si es administrador
+            </p>
         </div>
 
         <div class="card-action">
