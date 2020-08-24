@@ -46,7 +46,7 @@ export default ()=>{
         </div>
         <div class="card-content">
         <span class="card-title grey-text text-darken-4">App de pedidos Burguer Queen</span>
-            <p>App para restaurant donde se pueden tomar pedidos y administrar usuarios</p>
+            <p>App para restaurant donde se pueden tomar ordenes, marcar los pedidos y administrar usuarios</p>
         </div>
         <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">App de pedidos Burguer Queen<i
