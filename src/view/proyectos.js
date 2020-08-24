@@ -51,7 +51,7 @@ export default ()=>{
         <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">App de pedidos Burguer Queen<i
                     class="material-icons right">close</i></span>
-            <p>F
+            <p>
             App para restaurant con roles en la que se puede tomar pedidos si es mesero, y administrar empleados y productos si es administrador
             </p>
         </div>
