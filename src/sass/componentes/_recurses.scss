@@ -22,22 +22,33 @@
     src: url(../fonts/RobotoCondensed-Regular.ttf);
 }
 
+@font-face {
+  font-family: robbold;
+  src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
 
-$colors: (primary: #F4243C,
+$colors: (primary: mediumpurple,
     secundary: #FFF,
     letter: #242C4D,
     matiz:#F2F2F2,
+    wond:#B58B74 ,
 );
 
-$button-bg: #F4243C;
+$button-bg: mediumpurple;
 $button-text-color: #fff;
 $baby-blue: #f8faff;
 
 @mixin title {
   color: map-get($colors, 'primary');
   font-family: robregular;
-  font-size: 3em;
+  font-size: 4em;
 }
+@mixin flex($justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
 
 .bubbly-button{
   font-family: 'Helvetica', 'Arial', sans-serif;
@@ -55,7 +66,7 @@ $baby-blue: #f8faff;
   cursor: pointer;
   position: relative;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  box-shadow: 0 2px 25px mediumpurple;
   
   &:focus {
     outline: 0;
@@ -76,7 +87,6 @@ $baby-blue: #f8faff;
   &:active{
     transform: scale(0.9);
     background-color: darken($button-bg, 5%);
-    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
   }
   
   &.animate{

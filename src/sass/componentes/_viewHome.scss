@@ -1,242 +1,223 @@
+@import './recurses';
 
-.header {
+//parallax
+// .todo
+//   display: flex;
+//     flex-direction: column;
+.min1 {
+  width: 100%;
+
+  .bloque {
+    background: url(../imagenes/api.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 87vh;
-    background: map-get($colors, 'primary');
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
-  
-    .sidenav {
-      li {
-        .user-view {
-          justify-content: center;
-  
-          .background {
-            height: 8em;
-            display: block;
-          }
-  
-          a {
-            .circle {
-              margin-bottom: 30px;
-              margin-left: 20px;
-            }
-          }
-        }
-      }
-    }
-  
-    .text-header {
-      height: 70vh;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      color: #FFF;
-      align-items: center;
-  
-      .container {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-  
-        .text {
-          width: 65%;
-          flex-direction: column;
-  
-          h1 {
-            font-size: 4em;
-          }
-  
-          h2 {
-            font-size: 2.8em;
-            font-family: robligth;
-          }
-        }
-  
-        .logo-int {
-          height: 18em;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-  
-          img {
-            width: 200px;
-            height: 200px;
-          }
-  
-        }
-      }
-  
-    }
-  
-    .wave {
-      bottom: 0;
-      width: 100%;
+    background-position: right;
+  }
+}
+
+
+.row {
+  .col-portada-home {
+    .text-portada {
       position: absolute;
-    }
-  }
-  
-  .description-img {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-    font-size: 16px;
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-  .img-des{
-    flex-direction: column;
-    width: 65%;
-    h2{
-      margin: 5%;
-    font-size: 2.3em;
-    font-family: robregular;
-    color: map-get($colors, 'primary') !important;
-  }
-    img {
-      width: 100%;
-    }
-  }
-  
-    .description-img-text {
-      width: 35%;
-      font-family: robligth;
-      color: map-get($colors, 'letter');
-  
-      h2 {
-        font-size: 2.56rem;
-      }
-  
-      button {
-        margin-top: 17%;
-        border: none;
-      }
-  
-    }
-  
-  }
-  
-  .tools {
-    background: map-get($colors, 'matiz');
-    width: 100% !important;
-    height: 70vh;
-  
-    .section-tools {
-      padding: 5%;
-  
-      .work {
-        @include title;
-        text-align: center;
-        margin: 5%;
-      }
-  
-      .work-tools {
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-  
-        .tool-container {
-          width: 20%;
-          height: 30%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-  
-          .container-img {
-            margin: auto;
-            background: #FFFFFF;
-            box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
-            padding: 1%;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-  
-            img {
-              height: 80px;
-              display: block;
-              align-self: auto;
-            }
-          }
-  
-          .container-text {
-            margin: auto;
-  
-            h3 {
-              font-size: 2rem;
-              color: map-get($colors, 'letter');
-            }
-          }
+      height: 100vh;
+      // background: map-get($colors, 'primary');
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+
+      color: #FFFFFF;
+
+      .col-portada-home-div {
+        margin-top: 30%;
+
+
+        h1 {
+          font-size: 5em;
+          font-family: robbold;
+          letter-spacing: 0.02em;
+          animation-name: title1;
+          animation-duration: 2s;
+          opacity: 0;
+          animation-fill-mode: forwards;
+          animation-delay: 1s;
         }
-      }
-    }
-  }
-  
-  .space-habilities {
-    text-align: center;
-  
-    .section-habilities {
-  
-  
-      h2 {
-        @include title
-      }
-  
-      .content-all {
-        padding: 2%;
-        display: flex;
-        flex-wrap: wrap;
-  
-        .each-card {
-          color: map-get($colors, 'letter') !important;
-          width: (86%/3);
-          margin: 2%;
-  display: flex;
-  flex-direction: column;
-  // background: #FFFFFF;
-  box-shadow: 0px 0px 15px #D0CDE1;
-  border-radius: 9px;
-  
-          .card-img {
-  
-            margin: auto;
-            width: 45%;
-            height: 52%;
-            img {
-              width: 100%;
-              height: 100%;
+
+        h2 {
+          font-size: 3em;
+          font-family: robligth;
+          animation-name: title2;
+          animation-duration: 2s;
+          opacity: 0;
+          animation-fill-mode: forwards;
+          animation-delay: 2s;
+        }
+
+        button {
+          width: 70%;
+          height: 60px;
+          background-color: map-get($colors, 'primary');
+          border: 1px solid #FFFFFF;
+          box-sizing: border-box;
+          border-radius: 11px;
+          margin: 3%;
+          padding: .375rem .75rem;
+          border: 1px solid #FFFFFF;
+          border-radius: .25rem;
+         
+          transition: color .15s ease-in-out,
+            background-color .15s ease-in-out;
+          font-size: 20px;
+          font-family: robligth;
+
+          &:hover,
+          &:active,
+          &:focus {
+            a{
+             color: map-get($colors, 'primary') !important;
             }
-  }
-          .card-text {
-            height: 42%;
-            padding: 3%;
             
-              p {
-               font-size: 2em;
-               font-family:  robregular;
-              }
-  
-              hr {
-                 margin: 3%;
-                }
-  
-              a {
-                font-size: 1.2em;
-                color: map-get($colors, 'primary') !important;
-              }
-            }
-          
-  
+            background: #FFFFFF;
+            border: 1px solid map-get($colors, 'primary');
+          }
+          a{
+            color: #FFFFFF;
+          }
+        }
+
+        @keyframes title1 {
+          0% {
+            opacity: 0;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
+
+        @keyframes title2 {
+          0% {
+            opacity: 0;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.about {
+  height: 75vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+
+  h2 {
+    @include title;
+    font-family: robbold;
+    font-size: 4em;
+  }
+
+  .row {
+    div {
+
+      h3 {
+        font-family: robbold;
+        font-size: 3em;
+        text-align: center;
+
+        color: #B58B74;
+
+      }
+
+      p {
+        font-family: robligth;
+        text-align: center;
+        font-size: 2em;
+        line-height: 42px;
+        text-align: center;
+
+        color: #242C4D;
+      }
+    }
+  }
+
+}
+
+.habil {
+  width: 100%;
+  height: 30vh;
+  .bloque-habil {
+
+    .fondo {
+      // @extend .habil;
+      width: 100%;
+      height: 30vh;
+      position: absolute;
+      object-fit: cover;
+    }
+
+    .cont-text {
+      width: 100%;
+      height: 30vh;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      background:map-get($colors, 'primary');
+      font-family: robbold;
+      font-size: 4em;
+    }
+  }
+}
+
+.container-tabs {
+
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100%;
+
+  .row {
+    .col {
+      .card {
+        font-family: robregular;
+
+        // height: 271px;
+        .card-image {
+          img {
+            height: 11em;
+          }
+
+
+          .card-title {
+            width: 100%;
+            padding: 10px;
+          }
+        }
+
+        .card-content {
+          li {
+
+            font-size: 1.5em;
+            list-style: none;
+          }
         }
       }
     }
-  
   }
-  
+}
+
+// }

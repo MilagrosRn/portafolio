@@ -1,5 +1,5 @@
 @import './componentes/recurses';
-@import './componentes/viewHome';
+
 @import './componentes/viewAbout';
 
 html {
@@ -30,16 +30,26 @@ header {
 
         img {
           width: 74px;
+          margin-left: 20%  !important;
         }
+
+
+
       }
     }
   }
 }
 
-
-footer{
-  background: map-get($colors, 'letter') !important;
-}
+ 
 
 
-@import './componentes//mediaQueries'
+  @import './componentes/viewHome';
+  @import './componentes/viewContact';
+  @import './componentes/viewproyecto';
+  footer {
+    background: map-get($colors, 'wond') !important;
+    // position: relative;
+  }
+
+
+  @import './componentes//mediaQueries'

@@ -1,17 +1,153 @@
+// <img class="fondo" src="./imagenes/api.jpg"> L44
 export default () => {
     const view = `
-    <div class="header">
-    <section class="text-header">
-
-    <div class="container">
-        <div class="text">
-            <h1>Milagros Rodriguez</h1>
-            <h2>Front – end Developer</h2>
+   
+    <div class="row"> 
+        <div class="min1">
+            <div class="bloque"> 
+                <div class="col-portada-home" >
+                    <div class="text-portada col l5 s6">
+                        <div class="container col-portada-home-div">
+                            <h1>Milagros Rodriguez</h1>
+                            <h2>Front-end Developer</h2>
+                            <button class="btn-descarga">
+                <a href="./imagenes/habil/milagroscv.pdf" download="CVMilagrosRodriguez">
+                Descarga mi CV
+                </a>
+            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="about ">
+    <h2 class="center-align">Un poco sobre mi</h2>
+    <div class="row">
+        <div class="col s12 m4">
+            <h3>¿Qué hago?</h3>
+            <p>
+            Desarrollo productos web mejorando continuamente procesos y presentación de productos a los clientes. 
+            </p>
+         </div>
+        <div class="col s12 m4">
+            <h3>¿Cómo lo hago?</h3>
+            <p>
+            Me comprometo con mi trabajo, combino conocimientos con aprendizaje constante y pasion por lo que hago.
+            </p>
         </div>
-        <div class="logo-int ">
-            <img class="circle responsive-img" src="./imagenes/logo4.png" alt="">
+        <div class="col s12 m4">
+            <h3>¿Porqué yo?</h3>
+            <p>
+            No le temo a los nuevos retos, soy proactiva, adaptable y resilente.Trabajo con la mejor actitud ya sea individual o en equipo. 
+            </p>
         </div>
     </div>
+    </div>
+   
+    <div class="habil" > 
+        <div class="bloque-habil">
+            
+                <div class="cont-text">
+                    <h2>Habilidades Técnicas</h2>
+                </div>
+        </div>
+    </div>
+
+
+    
+<div class="container-tabs">
+<div class="row">
+    <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image">
+                <img src="./imagenes/habil/celcomp111.jpeg">
+                <span class="card-title">Diseño Web</span>
+            </div>
+            <div class="card-content">
+                <li>Html</li>
+                <li>Javascript</li>
+                <li>Sass</li>
+                <li>Css</li>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image">
+                <img src="./imagenes/habil/pagina-web-1.jpg">
+                <span class="card-title">Maquetacion</span>
+            </div>
+            <div class="card-content">
+                <li>Figma</li>
+                <li>Mobile First Design</li>
+                <li>Photoshop</li>
+                <li>Corel Draw</li>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image">
+                <img src="./imagenes/habil/ang.jpg">
+                <span class="card-title">Frameworks</span>
+            </div>
+            <div class="card-content">
+                <li>Angular</li>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div  class="row">
+    <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./imagenes/habil/node.jpg">
+                    <span class="card-title">API's</span>
+                </div>
+                <div class="card-content">
+                    <li>NodeJs</li>
+                     <li>Consumo de API's</li>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./imagenes/habil/api111.jpg">
+                    <span class="card-title">Control de versiones</span>
+                </div>
+                <div class="card-content">
+                    <li>Git</li>
+                     <li>Github</li>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./imagenes/habil/test111.jpg">
+                    <span class="card-title">Testing</span>
+                </div>
+                <div class="card-content">
+                    <li>Jest</li>
+                     <li>Jasmine</li>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+
+    `
+
+    const div = document.createElement('div')
+    div.innerHTML = view;
+    return div
+}
+/*
 </section>
 <div class="wave" style="height: 150px; overflow: hidden;">
     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -37,44 +173,44 @@ export default () => {
 <section class="container tools">
 <div class="section-tools">
     <h2 class="work">Trabajo con metodologías como:</h2>
-      
+
     <div class="work-tools">
-    
+
        <div class="tool-container">
             <div class="container-img">
                 <img class="browser-default" src="./imagenes/telefono-inteligente.svg" alt="">
-    
+
             </div >
            <div class="container-text">
                 <h3>Mobile First</h3>
            </div>
        </div>
-    
+
        <div class="tool-container">
-           
+
        <div class="container-img">
-                
+
             <img class="browser-default" src="./imagenes/agil.svg" alt="">
-    
-            </div> 
-            
+
+            </div>
+
             <div class="container-text">
-                
+
             <h3>Scrum</h3>
-    
+
             </div>
        </div>
        <div class="tool-container">
      <div class="container-img">
-                
+
             <img class="browser-default" src="./imagenes/plan.svg" alt="">
-    
-            </div> 
-            
+
+            </div>
+
             <div class="container-text">
-                
+
             <h3>Kanban</h3>
-    
+
             </div>
        </div>
        </div>
@@ -209,10 +345,4 @@ export default () => {
             </div>
         </div>
     </div>
-</section>
-    `
-
-    const div = document.createElement('div')
-    div.innerHTML = view;
-    return div
-}
+</section>*/

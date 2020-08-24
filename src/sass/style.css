@@ -31,14 +31,14 @@
   margin-bottom: 60px;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #F4243C;
+  background-color: mediumpurple;
   color: #fff;
   border-radius: 4px;
   border: none;
   cursor: pointer;
   position: relative;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  box-shadow: 0 2px 25px mediumpurple;
 }
 .bubbly-button:focus {
   outline: 0;
@@ -56,8 +56,7 @@
 }
 .bubbly-button:active {
   transform: scale(0.9);
-  background-color: #f20c27;
-  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  background-color: #845cd6;
 }
 .bubbly-button.animate:before {
   display: block;
@@ -66,87 +65,6 @@
 .bubbly-button.animate:after {
   display: block;
   animation: bottomBubbles ease-in-out 0.75s forwards;
-}
-
-.sob {
-  height: 100vh;
-}
-.sob .row .s4 {
-  background: #B58B74;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.sob .row .s4 .img-sob img {
-  width: 287px;
-  height: 299px;
-  border-radius: 50%;
-}
-
-.hab-cont-blandas {
-  height: 60vh;
-}
-.hab-cont-blandas .hab-blandas {
-  background: #242C4D !important;
-}
-.hab-cont-blandas .hab-blandas .hab-text .each-hab-text {
-  width: 20%;
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.hab-cont-blandas .hab-blandas .hab-text .each-hab-text .container-img {
-  margin: auto;
-  background: #FFFFFF;
-  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
-  padding: 1%;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hab-cont-blandas .hab-blandas .hab-text .each-hab-text .container-img img {
-  height: 80px;
-  display: block;
-  align-self: auto;
-}
-.hab-cont-blandas .hab-blandas .hab-text .each-hab-text .container-text {
-  margin: auto;
-  text-align: center;
-}
-.hab-cont-blandas .hab-blandas .hab-text .each-hab-text .container-text h3 {
-  font-size: 2rem;
-  color: white;
-}
-
-html {
-  height: 100%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: fmedium;
-}
-
-header a {
-  color: #242C4D !important;
-  text-decoration: none;
-}
-header nav div .brand-logo {
-  padding: 1%;
-}
-header nav div .brand-logo img {
-  width: 74px;
 }
 
 @font-face {
@@ -182,14 +100,14 @@ header nav div .brand-logo img {
   margin-bottom: 60px;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #F4243C;
+  background-color: mediumpurple;
   color: #fff;
   border-radius: 4px;
   border: none;
   cursor: pointer;
   position: relative;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  box-shadow: 0 2px 25px mediumpurple;
 }
 .bubbly-button:focus {
   outline: 0;
@@ -207,8 +125,215 @@ header nav div .brand-logo img {
 }
 .bubbly-button:active {
   transform: scale(0.9);
-  background-color: #f20c27;
-  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  background-color: #845cd6;
+}
+.bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+.sob {
+  height: 90vh;
+}
+.sob .row .s4 {
+  background: #B58B74;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sob .row .s4 .img-sob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sob .row .s4 .img-sob img {
+  width: 60%;
+  border-radius: 50%;
+}
+.sob .row .s4 .redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.sob .row .s4 .redes a {
+  width: 18%;
+}
+.sob .row .s4 .redes a .icon {
+  width: 100%;
+  align-self: center;
+}
+.sob .row .s8 {
+  padding: 3%;
+}
+.sob .row .s8 h2 {
+  font-family: robbold;
+  font-size: 2.8em;
+  display: flex;
+  align-items: center;
+  color: #242C4D !important;
+}
+.sob .row .s8 p {
+  margin: 2%;
+  font-size: 1.2em;
+}
+.sob .row .s8 button {
+  width: 50%;
+  height: 60px;
+  background-color: mediumpurple;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 11px;
+  margin: 5%;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  color: #FFFFFF;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  font-size: 20px;
+  font-family: robligth;
+}
+.sob .row .s8 button:hover, .sob .row .s8 button:active, .sob .row .s8 button:focus {
+  background: #FFFFFF;
+  border: 1px solid mediumpurple;
+}
+.sob .row .s8 button:hover a, .sob .row .s8 button:active a, .sob .row .s8 button:focus a {
+  color: #9073db !important;
+}
+.sob .row .s8 button a {
+  color: #FFFFFF;
+}
+
+.hab-cont-blandas {
+  height: 100vh;
+}
+.hab-cont-blandas .hab-blandas {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5%;
+}
+.hab-cont-blandas .hab-blandas .row {
+  width: 70%;
+}
+.hab-cont-blandas .hab-blandas .row .col .card-panel {
+  background: white !important;
+  color: #B58B74 !important;
+  border: 1px solid #B58B74;
+  box-sizing: border-box;
+  filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.25));
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hab-cont-blandas .hab-blandas .row .col .card-panel img {
+  width: 30%;
+}
+.hab-cont-blandas .hab-blandas .row .col .card-panel span {
+  font-size: 1.2em;
+  margin-left: 2%;
+  text-align: center;
+}
+.hab-cont-blandas .hab-blandas .div-img-about {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.hab-cont-blandas .hab-blandas .div-img-about img {
+  width: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: fmedium;
+}
+
+header a {
+  color: #242C4D !important;
+  text-decoration: none;
+}
+header nav div .brand-logo {
+  padding: 1%;
+}
+header nav div .brand-logo img {
+  width: 74px;
+  margin-left: 20% !important;
+}
+
+@font-face {
+  font-family: fligth;
+  src: url(../fonts/Comfortaa-Light.ttf);
+}
+@font-face {
+  font-family: fmedium;
+  src: url(../fonts/Comfortaa-Medium.ttf);
+}
+@font-face {
+  font-family: fbold;
+  src: url(../fonts/Comfortaa-Bold.ttf);
+}
+@font-face {
+  font-family: robligth;
+  src: url(../fonts/RobotoCondensed-Light.ttf);
+}
+@font-face {
+  font-family: robregular;
+  src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: robbold;
+  src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+.bubbly-button {
+  font-family: "Helvetica", "Arial", sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: mediumpurple;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px mediumpurple;
+}
+.bubbly-button:focus {
+  outline: 0;
+}
+.bubbly-button:before, .bubbly-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #845cd6;
 }
 .bubbly-button.animate:before {
   display: block;
@@ -223,7 +348,7 @@ header nav div .brand-logo img {
   width: 100%;
 }
 .min1 .bloque {
-  background: url(../imagenes/portada.jpg);
+  background: url(../imagenes/api.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -238,7 +363,6 @@ header nav div .brand-logo img {
 .row .col-portada-home .text-portada {
   position: absolute;
   height: 100vh;
-  background: #6B3A53;
   display: flex;
   align-items: center;
   text-align: center;
@@ -270,7 +394,7 @@ header nav div .brand-logo img {
 .row .col-portada-home .text-portada .col-portada-home-div button {
   width: 70%;
   height: 60px;
-  background-color: #6B3A53;
+  background-color: mediumpurple;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 11px;
@@ -278,15 +402,19 @@ header nav div .brand-logo img {
   padding: 0.375rem 0.75rem;
   border: 1px solid #FFFFFF;
   border-radius: 0.25rem;
-  color: #FFFFFF;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
   font-size: 20px;
   font-family: robligth;
 }
 .row .col-portada-home .text-portada .col-portada-home-div button:hover, .row .col-portada-home .text-portada .col-portada-home-div button:active, .row .col-portada-home .text-portada .col-portada-home-div button:focus {
-  color: #6B3A53;
-  background-color: #FFFFFF;
-  border: 1px solid #6B3A53;
+  background: #FFFFFF;
+  border: 1px solid mediumpurple;
+}
+.row .col-portada-home .text-portada .col-portada-home-div button:hover a, .row .col-portada-home .text-portada .col-portada-home-div button:active a, .row .col-portada-home .text-portada .col-portada-home-div button:focus a {
+  color: mediumpurple !important;
+}
+.row .col-portada-home .text-portada .col-portada-home-div button a {
+  color: #FFFFFF;
 }
 @keyframes title1 {
   0% {
@@ -312,7 +440,7 @@ header nav div .brand-logo img {
   padding-top: 2%;
 }
 .about h2 {
-  color: #6B3A53;
+  color: mediumpurple;
   font-family: robregular;
   font-size: 4em;
   font-family: robbold;
@@ -351,16 +479,16 @@ header nav div .brand-logo img {
   align-items: center;
   justify-content: center;
   position: absolute;
-  background: rgba(112, 47, 71, 0.5);
+  background: mediumpurple;
   font-family: robbold;
   font-size: 4em;
 }
 
 .container-tabs {
-  padding-top: 5%;
+  padding-top: 2%;
   padding-left: 5%;
   padding-right: 5%;
-  height: 100vh;
+  height: 100%;
 }
 .container-tabs .row .col .card {
   font-family: robregular;
@@ -377,11 +505,162 @@ header nav div .brand-logo img {
   list-style: none;
 }
 
-footer {
-  background: #242C4D !important;
+.contact h2 {
+  color: mediumpurple;
+  font-family: robregular;
+  font-size: 4em;
+  font-family: robbold;
+  font-size: 4em;
+}
+.contact .row .img-form {
+  background-image: url(../imagenes/img1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  background-position: right;
+  width: 100%;
+  height: 67vh;
+}
+.contact button {
+  width: 50%;
+  height: 50px;
+  background-color: mediumpurple;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 11px;
+  margin: 5%;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  color: #FFFFFF;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  font-size: 20px;
+  font-family: robligth;
+}
+.contact button:hover, .contact button:active, .contact button:focus {
+  background: #FFFFFF;
+  border: 1px solid mediumpurple;
+}
+.contact button:hover a, .contact button:active a, .contact button:focus a {
+  color: #9073db !important;
+}
+.contact button a {
+  color: #FFFFFF;
 }
 
-@media (max-width: 600px) {
+@font-face {
+  font-family: fligth;
+  src: url(../fonts/Comfortaa-Light.ttf);
+}
+@font-face {
+  font-family: fmedium;
+  src: url(../fonts/Comfortaa-Medium.ttf);
+}
+@font-face {
+  font-family: fbold;
+  src: url(../fonts/Comfortaa-Bold.ttf);
+}
+@font-face {
+  font-family: robligth;
+  src: url(../fonts/RobotoCondensed-Light.ttf);
+}
+@font-face {
+  font-family: robregular;
+  src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: robbold;
+  src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+.bubbly-button {
+  font-family: "Helvetica", "Arial", sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: mediumpurple;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px mediumpurple;
+}
+.bubbly-button:focus {
+  outline: 0;
+}
+.bubbly-button:before, .bubbly-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #845cd6;
+}
+.bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+.proyect .port-proyect {
+  background-image: url(../imagenes/img1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: right;
+  width: 100%;
+  height: 67vh;
+}
+.proyect .port-proyect .text-mira {
+  background: rgba(144, 115, 219, 0.5);
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 11px;
+  width: 50%;
+  text-align: center;
+}
+.proyect .port-proyect .text-mira h4 {
+  color: white;
+}
+.proyect .proyectos .group-proy .col .card-image a {
+  background: #B58B74;
+}
+.proyect .proyectos .group-proy .col .card-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.proyect .proyectos .group-proy .col .card-action a {
+  width: 100%;
+  margin-right: 0 !important;
+  padding: 1%;
+  color: mediumpurple !important;
+}
+.proyect .proyectos .group-proy .col .card-action a i {
+  margin-right: 2%;
+}
+
+footer {
+  background: #B58B74 !important;
+}
+
+@media (max-width: 700px) {
   .text-header .container {
     display: flex;
     justify-content: space-evenly;
@@ -506,68 +785,65 @@ footer {
   }
   .space-habilities .section-habilities .content-all .each-card .card-text a {
     font-size: 1.2em;
-    color: #6B3A53 !important;
+    color: mediumpurple !important;
   }
 
   .sob {
-    height: 100vh;
-  }
-  .sob .section-sob {
-    justify-content: center;
-  }
-  .sob .section-sob figure {
-    flex-direction: column;
-  }
-  .sob .section-sob figure .sob-img {
     width: 100%;
+  }
+  .sob .row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .sob .row .s4 {
+    height: 40vh;
+    width: 100% !important;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
-  .sob .section-sob figure .sob-img img {
-    width: 80%;
-    align-self: center;
+  .sob .row .s4 .img-sob img {
+    width: 50%;
+    margin: 2%;
   }
-  .sob .section-sob figure .sob-text {
-    width: 100%;
+  .sob .row .s4 .redes {
+    height: 50%;
+    display: block;
+  }
+  .sob .row .s4 .redes a .icon {
+    width: 18%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .sob .row .s8 p {
+    font-size: 1em;
+  }
+  .sob .row .s8 button {
+    width: 50%;
+    height: 60px;
+  }
+  .sob .container {
+    width: 100% !important;
+  }
+
+  .habil .div-about-hab .about-hab {
+    position: relative;
+    margin-top: 30%;
   }
 
   .hab-cont-blandas .hab-blandas {
-    height: 100vh;
+    height: 90vh;
     padding-top: 10%;
-  }
-  .hab-cont-blandas .hab-blandas .work-tools {
     display: flex;
+    flex-direction: column;
   }
-  .hab-cont-blandas .hab-blandas .work-tools .each-hab-text {
-    width: 45%;
-    height: 40%;
-    display: block;
-    align-self: auto;
-  }
-  .hab-cont-blandas .hab-blandas .work-tools .each-hab-text .container-img {
-    margin: auto;
-    background: #FFFFFF;
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
-    padding: 1%;
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .hab-cont-blandas .hab-blandas .work-tools .each-hab-text .container-img img {
-    height: 60px;
-    display: block;
-    align-self: auto;
-  }
-  .hab-cont-blandas .hab-blandas .work-tools .each-hab-text .container-text {
-    text-align: center;
+  .hab-cont-blandas .hab-blandas .div-img-about {
     width: 100%;
   }
-  .hab-cont-blandas .hab-blandas .work-tools .each-hab-text .container-text h3 {
-    font-size: 1.5rem;
-    color: white;
+
+  .row .col-portada-home .text-portada {
+    background: mediumpurple;
   }
 
   .about {
@@ -579,7 +855,11 @@ footer {
   }
 
   .container-tabs {
-    height: 265vh;
+    height: 100%;
+  }
+
+  .img-form {
+    display: none;
   }
 }
 

@@ -1,83 +1,142 @@
-.sob{
-    .section-sob{
-        width: 100%;
-        height: 70vh;
-        h2{
-@include title;
-text-align: center;
-        }
-        figure{
-            display: flex;
-            justify-content: center;
-            .sob-img{
-                width: 45%;
-                display: flex;
-                align-items: center;
-                img{
-width: 100%
-                }
-            }
-            .sob-text{
-                width: 65%;
-                padding-left: 3%;
-               display: flex;
-               flex-direction: column;
+@import './recurses';
 
-                p{
- margin: 3%;
-                }
-                .btn-hab{
-                    margin-top: 3%;
-                }
-            }
+.sob {
+  height: 90vh;
+
+  .row {
+    .s4 {
+      background: #B58B74;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .img-sob {
+ display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 60%;
+          // height: 299px;
+
+          border-radius: 50%;
         }
+      }
+
+      .redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+          a{
+            width: 18%;
+            .icon {
+              width: 100%;
+               align-self: center; 
+            }
+          }
+      }
     }
+
+    .s8 {
+      padding: 3%;
+    
+      h2 {
+
+        font-family: robbold;
+        font-size: 2.8em;
+        display: flex;
+        align-items: center;
+        color:#242C4D !important
+
+      }
+
+      p {
+        margin: 2%;
+        font-size: 1.2em;
+      }
+
+      button {
+        width: 50%;
+        height: 60px;
+        background-color: map-get($colors, 'primary');
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 11px;
+        margin: 5%;
+        padding: .375rem .75rem;
+        border-radius: .25rem;
+        color: #FFFFFF;
+        transition: color .15s ease-in-out,
+        background-color .15s ease-in-out;
+        font-size: 20px;
+        font-family: robligth;
+
+        &:hover,
+        &:active,
+        &:focus {
+          a{
+            color:#9073db !important;
+          }
+          
+          background: #FFFFFF;
+          border: 1px solid map-get($colors, 'primary');
+        }
+        a{
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
 }
 
-.hab-cont-blandas{
-    height: 60vh;
-    .hab-blandas{
-        
-    background:map-get($colors, 'letter') !important;
-    .hab-text{
-        
-        .each-hab-text{
-           
-            width: 20%;
-          height: 30%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-  
-          .container-img {
-            margin: auto;
-            background: #FFFFFF;
-            box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
-            padding: 1%;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-  
-            img {
-              height: 80px;
-              display: block;
-              align-self: auto;
-            }
-          }
-  
-          .container-text {
-            margin: auto;
-            text-align: center;
-            h3 {
-                
-              font-size: 2rem; color: white;
-            }
-          }
-        }
-        
-    }
-}}
+.hab-cont-blandas {
+  height: 100vh;
+
+  .hab-blandas {
+
+    
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5%;
+.row{
+width: 70%;
+.col{
+  .card-panel {
+background:white !important;
+color:  #B58B74 !important;
+border: 1px solid #B58B74;
+box-sizing: border-box;
+filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.25));
+border-radius: 15px;
+
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+img{
+  width: 30%;
+}
+span{
+  font-size: 1.2em;
+  margin-left: 2%;
+  text-align: center;
+}
+  }
+}
+}
+.div-img-about{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  img{
+    width: 100%;
+  }
+}
+   
+
+    
+  }
+}
